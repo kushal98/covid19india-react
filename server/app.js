@@ -20,7 +20,8 @@ client.on('error', (err) => {
 });*/
 
 MongoDB = null;
-const uri = `mongodb+srv://${process.env.DB_NAME}:${process.env.DB_PASSWORD}@${process.env.DB_NAME}-h6o7s.gcp.mongodb.net/test?retryWrites=true&w=majority&replicaSet=rs`;
+//const uri = `mongodb+srv://${process.env.DB_NAME}:${process.env.DB_PASSWORD}@${process.env.DB_NAME}-h6o7s.gcp.mongodb.net/test?retryWrites=true&w=majority&replicaSet=rs`;
+const uri = `mongodb+srv://kushal:Kushal123@cluster0-yuf0g.mongodb.net/test?retryWrites=true&w=majority`;
 MongoClient.connect(uri, {
   poolSize: 10,
   useUnifiedTopology: true,
